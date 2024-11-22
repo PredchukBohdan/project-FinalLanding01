@@ -15,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -28,7 +28,10 @@ body {
   font-family: 'Gilroy', sans-serif;
   overflow-x: hidden;
 }
-
+body.hidden {
+  overflow: hidden;
+  width: 100%;
+}
 main {
   flex-grow: 1;
 }
