@@ -75,7 +75,7 @@
   gap: 40px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .nav-list {
     display: none;
   }
@@ -206,6 +206,14 @@
 .mobile-nav-social-item:focus .social-icons-mobile {
   fill: #3350e9;
 }
+.mobile-nav-social-item:hover .social-icons-mobile.insta,
+.mobile-nav-social-item:focus .social-icons-mobile.insta {
+  fill: #ff2da4;
+}
+.mobile-nav-social-item:hover .social-icons-mobile.youtube,
+.mobile-nav-social-item:focus .social-icons-mobile.youtube {
+  fill: #eb0707;
+}
 header.sticky .mobile-nav-social-item:hover .social-icons-mobile,
 .header.sticky .mobile-nav-social-item:focus .social-icons-mobile {
   fill: #8394eb;
@@ -260,6 +268,7 @@ header.sticky .mobile-nav-social-item:hover .social-icons-mobile,
   max-width: 250px;
   width: 100%;
   transform: translateX(100%);
+  background-size: cover;
   background-image: url('/img/img-mobile/bcgr-overlay.jpg');
   background-color: rgba(12, 12, 12, 0.92);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -314,6 +323,12 @@ header.sticky .mobile-nav-social-item:hover .social-icons-mobile,
   background-color: #0c0c0c;
   border: none;
   color: #fbfbfb;
+}
+.btn-close .svg-close {
+  transition: transform 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-close:hover .svg-close {
+  transform: rotate(90deg) scale(1.1);
 }
 
 .svg-close {
