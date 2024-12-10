@@ -10,8 +10,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
     />
     <title>WatchCharm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
     <script type="module" crossorigin src="/project-asdasd11/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-asdasd11/assets/index-I7ThtRAM.css">
+    <link rel="stylesheet" crossorigin href="/project-asdasd11/assets/index-vyWSA4XJ.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -30,6 +38,9 @@
         </li>
         <li class="nav-list-item">
           <a class="nav-link" href="#sale">Sale</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#categories">Categories</a>
         </li>
         <li class="nav-list-item">
           <a class="nav-link" href="#reviews">Reviews</a>
@@ -117,6 +128,9 @@
             <a class="nav-link menu-link color" href="#">Sale</a>
           </li>
           <li class="nav-list-item color">
+            <a class="nav-link menu-link color" href="#">Categories</a>
+          </li>
+          <li class="nav-list-item color">
             <a class="nav-link menu-link color" href="#">Reviews</a>
           </li>
           <li class="nav-list-item color">
@@ -149,7 +163,7 @@
             rel="noreferrer noopener"
           >
             <svg
-              class="social-icons-mobile overlay-color"
+              class="social-icons-mobile insta overlay-color"
               width="18"
               height="18"
             >
@@ -165,7 +179,7 @@
             rel="noreferrer noopener"
           >
             <svg
-              class="social-icons-mobile overlay-color"
+              class="social-icons-mobile youtube overlay-color"
               width="18"
               height="18"
             >
@@ -290,19 +304,19 @@
     <div class="hero-img">
       <picture>
         <source
-          srcset="/project-asdasd11/assets/Rectangle_desktop-oGSWeSSz.webp 1x, /project-asdasd11/assets/Rectangle_desktop@2x-BuVOu7hX.webp 2x"
+          srcset="/project-asdasd11/assets/hero-desktop-@1x-BhCTSsrv.webp 1x, /project-asdasd11/assets/hero-desktop-@2x-BB-cp7Sq.webp 2x"
           media="(min-width: 1280px)"
         />
         <source
-          srcset="/project-asdasd11/assets/Rectangle_tablet-COx3CVyH.webp 1x, /project-asdasd11/assets/Rectangle_tablet@2x-C1JdJD65.webp 2x"
+          srcset="/project-asdasd11/assets/hero-tablet-@1x-BsuZUD_n.webp 1x, /project-asdasd11/assets/hero-tablet-@2x--RlcjyDX.webp 2x"
           media="(min-width: 768px)"
         />
         <source
-          srcset="/project-asdasd11/assets/Rectangle_mobile-B00CrBA2.webp 1x, /project-asdasd11/assets/Rectangle_mobile@2x-4GnB8cKf.webp 2x"
+          srcset="/project-asdasd11/assets/hero-mobile-@1x-H7Q6Mpfn.webp 1x, /project-asdasd11/assets/hero-mobile-@2x-DjWh822Q.webp 2x"
           media="(max-width: 767px)"
         />
         <img
-          src="/project-asdasd11/assets/Rectangle_mobile-B00CrBA2.webp"
+          src="/project-asdasd11/assets/hero-mobile-@1x-H7Q6Mpfn.webp"
           alt="Watches"
           width="1150"
           height="500"
@@ -340,7 +354,7 @@
         />
         <source
           srcset="/project-asdasd11/assets/about-us-tab-1x-BZVQ2FuV.jpg 1x, /project-asdasd11/assets/about-us-tab-2x-L3-K_FVF.jpg 2x"
-          media="(max-width: 1279px)"
+          media="(min-width: 768px)"
         />
         <source
           srcset="/project-asdasd11/assets/about-us-pc-1x-JwYWipxt.jpg 1x, /project-asdasd11/assets/about-us-pc-2x-6vq_GQzG.jpg 2x"
@@ -367,6 +381,7 @@
             <img
               srcset="/project-asdasd11/assets/Fenix-7X-BKOfl9LQ.png 1x, /project-asdasd11/assets/Fenix-7X@2x-D7XfIU_Y.png 2x"
               src="/project-asdasd11/assets/Fenix-7X-BKOfl9LQ.png"
+              data-popup="../img/img-popup/popup-1.png"
               class="resp-image"
               alt="Black round case, black strap, digital dial with bright white and red elements."
             />
@@ -384,6 +399,7 @@
             <img
               srcset="/project-asdasd11/assets/Marq-Athlete-B2jY4fC3.png 1x, /project-asdasd11/assets/Marq-Athlete@2x-Dj_mR45z.png 2x"
               src="/project-asdasd11/assets/Marq-Athlete-B2jY4fC3.png"
+              data-popup="../img/img-popup/popup-2.png"
               class="resp-image"
               alt="Black round case with silver elements, black strap, digital dial with green and white indicators."
             />
@@ -400,6 +416,7 @@
             <img
               srcset="/project-asdasd11/assets/Descent-MK1-BDpsXYvz.png 1x, /project-asdasd11/assets/Descent-MK1@2x-j_SKlJii.png 2x"
               src="/project-asdasd11/assets/Descent-MK1-BDpsXYvz.png"
+              data-popup="../img/img-popup/popup-3.png"
               class="resp-image"
               alt="Round silver case, black strap, digital dial with white and green elements."
             />
@@ -416,6 +433,7 @@
             <img
               srcset="/project-asdasd11/assets/D2-Delta-DZwAQH0L.png 1x, /project-asdasd11/assets/D2-Delta@2x-DVQ9n8m5.png 2x"
               src="/project-asdasd11/assets/D2-Delta-DZwAQH0L.png"
+              data-popup="../img/img-popup/popup-4.png"
               class="resp-image"
               alt="Silver-black round case, metallic strap, digital dial with white and green details."
             />
@@ -432,6 +450,7 @@
             <img
               srcset="/project-asdasd11/assets/Fenix-6-LsBHZMUk.png 1x, /project-asdasd11/assets/Fenix-6@2x-VYtt3g4b.png 2x"
               src="/project-asdasd11/assets/Fenix-6-LsBHZMUk.png"
+              data-popup="../img/img-popup/popup-5.png"
               class="resp-image"
               alt="Gray round case, black strap, digital dial with blue elements."
             />
@@ -448,6 +467,7 @@
             <img
               srcset="/project-asdasd11/assets/Watch-S42-re8wv9Sf.png 1x, /project-asdasd11/assets/Watch-S42@2x-B3CLB_Lx.png 2x"
               src="/project-asdasd11/assets/Watch-S42-re8wv9Sf.png"
+              data-popup="../img/img-popup/popup-6.png"
               class="resp-image"
               alt="Black round case, black strap, digital dial with red and white elements."
             />
@@ -631,59 +651,123 @@
   </div>
 </section>
 
+      <section class="tabs" id="categories">
+  <tabs-component class="tabs-conponent">
+    <div class="container">
+      <h2 class="tabs-title">Categories</h2>
+      <ul class="tabs-wrapper">
+        <li class="tabs-element" data-type="classic">
+          <button class="tabs-button active" type="button">Classic</button>
+        </li>
+        <li class="tabs-element" data-type="smart">
+          <button class="tabs-button" type="button">Smart</button>
+        </li>
+        <li class="tabs-element" data-type="apple">
+          <button class="tabs-button" type="button">Apple</button>
+        </li>
+      </ul>
+      <div class="tabs-content">
+        <img
+          src="/project-asdasd11/assets/rolex-CtDK6GfV.webp"
+          alt="Watches"
+          width="1150"
+          height="500"
+          id="classic"
+          class="active"
+        />
+        <img
+          src="/project-asdasd11/assets/apple-7FWUb92C.png"
+          alt="Watches"
+          width="1150"
+          height="500"
+          id="apple"
+        />
+        <img
+          src="/project-asdasd11/assets/smart-DyhBsQDc.png"
+          alt="Watches"
+          width="1150"
+          height="500"
+          id="smart"
+        />
+      </div>
+    </div>
+  </tabs-component>
+</section>
+
       <section id="reviews" class="reviews">
-  <div class="container">
-    <h2 class="review-header">Reviews</h2>
-    <ul class="review-list">
-      <li class="review-item">
-        <img
-          srcset="/project-asdasd11/assets/RevImgFirst-1x-D8PRLKHf.webp 1x, /project-asdasd11/assets/RevImgFirst-2x-BHVIkXc_.png 2x"
-          width="56"
-          height="56"
-          class="review-profile-image"
-          src="/project-asdasd11/assets/RevImgFirst-1x-D8PRLKHf.webp"
-          alt="John Wax's Portrait"
-        />
-        <h3 class="review-subheader">John Wax</h3>
-        <p class="review-paragraph">
-          Buying a watch from was the best choice for me. The design is
-          perfectly combined with high quality materials. The strap fits nicely
-          on the hand, and the mechanism works flawlessly.
-        </p>
-      </li>
-      <li class="review-item">
-        <img
-          srcset="/project-asdasd11/assets/RevImgSecond-1x-pxJqMDJj.webp 1x, /project-asdasd11/assets/RevImgSecond-2x-DZyHK7sU.png 2x"
-          width="56"
-          height="56"
-          class="review-profile-image"
-          src="/project-asdasd11/assets/RevImgSecond-1x-pxJqMDJj.webp"
-          alt="Victoria Romashenko's Portrait"
-        />
-        <h3 class="review-subheader">Victoria Romashenko</h3>
-        <p class="review-paragraph">
-          Can't take my eyes off my watch from. Every time I put it on, it is
-          admired by those around me. The build quality and attention to detail
-          make it a real gem among my accessories.
-        </p>
-      </li>
-      <li class="review-item">
-        <img
-          srcset="/project-asdasd11/assets/RevImgThird-1x-DqyMH1z8.webp 1x, /project-asdasd11/assets/RevImgThird-2x-CMBfwMfk.png 2x"
-          width="56"
-          height="56"
-          class="review-profile-image"
-          src="/project-asdasd11/assets/RevImgThird-1x-DqyMH1z8.webp"
-          alt="Ananastasia Trachuk's Portrait"
-        />
-        <h3 class="review-subheader">Anastasia Trachuk</h3>
-        <p class="review-paragraph">
-          My watch from is a real masterpiece. Every detail impresses with the
-          high quality of execution. Special features like [specify features]
-          make it an indispensable companion in my daily life.
-        </p>
-      </li>
-    </ul>
+  <div class="container reviews-container">
+    <reviews-slider class="swiper">
+      <h2 class="review-header">Reviews</h2>
+      <ul class="review-list swiper-wrapper">
+        <li class="review-item swiper-slide">
+          <img
+            srcset="/project-asdasd11/assets/RevImgFirst-1x-D8PRLKHf.webp 1x, /project-asdasd11/assets/RevImgFirst-2x-BHVIkXc_.png 2x"
+            width="56"
+            height="56"
+            class="review-profile-image"
+            src="/project-asdasd11/assets/RevImgFirst-1x-D8PRLKHf.webp"
+            alt="John Wax's Portrait"
+          />
+          <h3 class="review-subheader">John Wax</h3>
+          <p class="review-paragraph">
+            Buying a watch from was the best choice for me. The design is
+            perfectly combined with high quality materials. The strap fits
+            nicely on the hand, and the mechanism works flawlessly.
+          </p>
+        </li>
+        <li class="review-item swiper-slide">
+          <img
+            srcset="/project-asdasd11/assets/RevImgSecond-1x-pxJqMDJj.webp 1x, /project-asdasd11/assets/RevImgSecond-2x-DZyHK7sU.png 2x"
+            width="56"
+            height="56"
+            class="review-profile-image"
+            src="/project-asdasd11/assets/RevImgSecond-1x-pxJqMDJj.webp"
+            alt="Victoria Romashenko's Portrait"
+          />
+          <h3 class="review-subheader">Victoria Romashenko</h3>
+          <p class="review-paragraph">
+            Can't take my eyes off my watch from. Every time I put it on, it is
+            admired by those around me. The build quality and attention to
+            detail make it a real gem among my accessories.
+          </p>
+        </li>
+        <li class="review-item swiper-slide">
+          <img
+            srcset="/project-asdasd11/assets/RevImgThird-1x-DqyMH1z8.webp 1x, /project-asdasd11/assets/RevImgThird-2x-CMBfwMfk.png 2x"
+            width="56"
+            height="56"
+            class="review-profile-image"
+            src="/project-asdasd11/assets/RevImgThird-1x-DqyMH1z8.webp"
+            alt="Ananastasia Trachuk's Portrait"
+          />
+          <h3 class="review-subheader">Anastasia Trachuk</h3>
+          <p class="review-paragraph">
+            My watch from is a real masterpiece. Every detail impresses with the
+            high quality of execution. Special features like [specify features]
+            make it an indispensable companion in my daily life.
+          </p>
+        </li>
+        <li class="review-item swiper-slide">
+          <img
+            srcset="/project-asdasd11/assets/RevImgFirst-1x-D8PRLKHf.webp 1x, /project-asdasd11/assets/RevImgFirst-2x-BHVIkXc_.png 2x"
+            width="56"
+            height="56"
+            class="review-profile-image"
+            src="/project-asdasd11/assets/RevImgFirst-1x-D8PRLKHf.webp"
+            alt="John Wax's Portrait"
+          />
+          <h3 class="review-subheader">Anthony Peace</h3>
+          <p class="review-paragraph">
+            Buying a watch from was the best choice for me. The design is
+            perfectly combined with high quality materials. The strap fits
+            nicely on the hand, and the mechanism works flawlessly.
+          </p>
+        </li>
+      </ul>
+      <div class="swiper-pagination reviews-pagination"></div>
+    </reviews-slider>
+    <div class="swiper-button-prev preview-prev"></div>
+    <div class="swiper-button-next preview-next"></div>
   </div>
 </section>
 
@@ -782,6 +866,23 @@
   </svg>
   <p>Top</p>
 </button>
+
+    <media-popup class="media-popup">
+  <div class="media-over"></div>
+  <div class="media-content">
+    <button
+      class="media-close"
+      id="media-close"
+      type="button"
+      aria-label="close menu"
+    >
+      <svg class="close" width="17" height="17">
+        <use href="/project-asdasd11/assets/icons1-Dd33mQal.svg#close-black"></use>
+      </svg>
+    </button>
+    <img width="1000" height="1000" src="" class="popup-image" alt="" />
+  </div>
+</media-popup>
 
 
     <footer class="footer" id="footer">
