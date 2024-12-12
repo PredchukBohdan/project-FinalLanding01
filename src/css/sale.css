@@ -1,9 +1,9 @@
-
 /* --------------------SALE----------------- */
 
 .sale {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #fff;
 }
 
 .sale-title {
@@ -129,10 +129,10 @@
 }
 
 @media screen and (min-width: 768px) {
-.sale {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+  .sale {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .sale-title {
     font-size: 48px;
     margin-bottom: 40px;
@@ -200,7 +200,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-.sale {
+  .sale {
     padding-top: 50px;
     padding-bottom: 50px;
   }
